@@ -1,7 +1,11 @@
 # Yamaha Genos Logic Pro Presets
 
-Generate Logic Pro External Instrument `.pst` presets for Yamaha Genos voices from the
-Cubase patch script in `Yamaha Genos.txt`.
+Generate Logic Pro External Instrument plug-in `.pst` presets for Yamaha Genos voices
+from the Cubase patch script in `Yamaha Genos.txt`.
+
+The generated `.pst` files are intended to be loaded by Logic Pro's External
+Instrument plug-in. Each preset selects a Yamaha Genos voice by storing the
+required Bank MSB, Bank LSB, and Program Change values in the plug-in preset.
 
 ## Requirements
 
@@ -26,6 +30,18 @@ and writes:
 
 The generated presets store Bank MSB, Bank LSB, and Program Change values. The MIDI
 channel is set to All, and Send Program Change is unchecked.
+
+## Use In Logic Pro
+
+After generating, copy or symlink the `Yamaha Genos` folder from `presets/` into
+Logic Pro's External Instrument plug-in settings folder:
+
+```text
+~/Music/Audio Music Apps/Plug-In Settings/External Instrument/
+```
+
+The presets will then be available from the External Instrument plug-in preset
+menu in Logic Pro.
 
 ## Options
 
