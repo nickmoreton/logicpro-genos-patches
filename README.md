@@ -33,15 +33,28 @@ channel is set to All, and Send Program Change is unchecked.
 
 ## Use In Logic Pro
 
-After generating, copy or symlink the `Yamaha Genos` folder from `presets/` into
-Logic Pro's External Instrument plug-in settings folder:
+After generating, copy the `presets/Yamaha Genos` folder into Logic Pro's External
+Instrument plug-in settings folder:
 
 ```text
 ~/Music/Audio Music Apps/Plug-In Settings/External Instrument/
 ```
 
-The presets will then be available from the External Instrument plug-in preset
-menu in Logic Pro.
+This keeps the generated Genos presets grouped as one instrument folder and leaves
+room for other External Instrument preset folders to be added later. The presets
+will then be available from the External Instrument plug-in preset menu in Logic Pro.
+
+Example folder structure:
+
+```text
+~/Music/Audio Music Apps/Plug-In Settings/External Instrument/
+├── Yamaha Genos/
+│   ├── Genos Piano/
+│   ├── Genos E.Piano/
+│   └── ...
+├── Another Synth/
+└── Another Sound Module/
+```
 
 ## Options
 
